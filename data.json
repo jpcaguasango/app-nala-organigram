@@ -1,0 +1,104 @@
+{
+  "tiers": [
+    {
+      "id": "tier-7ff88ef9-d81f-4c18-83bd-2c0b98406456",
+      "data": {
+        "label": "Gerencia"
+      },
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "type": "tierNode",
+      "draggable": false
+    },
+    {
+      "id": "tier-14c82df9-3c25-4d84-b33c-dcd693e59944",
+      "data": {
+        "label": "Tier 2"
+      },
+      "position": {
+        "x": 0,
+        "y": 350
+      },
+      "type": "tierNode",
+      "draggable": false
+    }
+  ],
+  "nodes": [
+    {
+      "id": "tier-7ff88ef9-d81f-4c18-83bd-2c0b98406456",
+      "data": {
+        "label": "Gerencia"
+      },
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "type": "tierNode",
+      "draggable": false
+    },
+    {
+      "id": "tier-14c82df9-3c25-4d84-b33c-dcd693e59944",
+      "data": {
+        "label": "Tier 2"
+      },
+      "position": {
+        "x": 0,
+        "y": 350
+      },
+      "type": "tierNode",
+      "draggable": false
+    },
+    {
+      "id": "node-93b260a7-5355-4eec-88d6-0f499d5acb2e",
+      "data": {
+        "id": "node-93b260a7-5355-4eec-88d6-0f499d5acb2e",
+        "label": "Gerencia 1",
+        "employees": [
+          {
+            "name": "Juan Pablo 123",
+            "position": "Developer 123"
+          },
+          {
+            "name": "Juan Pablo",
+            "position": "Developer"
+          }
+        ]
+      },
+      "position": {
+        "x": 210.83866450492314,
+        "y": 70
+      },
+      "tier": "tier-7ff88ef9-d81f-4c18-83bd-2c0b98406456",
+      "type": "customNode"
+    },
+    {
+      "id": "node-0fb9858a-a57b-428f-a679-c34b50bda7ec",
+      "data": {
+        "id": "node-0fb9858a-a57b-428f-a679-c34b50bda7ec",
+        "label": "New Node",
+        "employees": [
+          {
+            "name": "Paula Chavez",
+            "position": "Jefe"
+          }
+        ]
+      },
+      "position": {
+        "x": 392.93075619158253,
+        "y": 420
+      },
+      "tier": "tier-14c82df9-3c25-4d84-b33c-dcd693e59944",
+      "type": "customNode"
+    }
+  ],
+  "edges": [
+    {
+      "id": "enode-93b260a7-5355-4eec-88d6-0f499d5acb2e-node-0fb9858a-a57b-428f-a679-c34b50bda7ec",
+      "source": "node-93b260a7-5355-4eec-88d6-0f499d5acb2e",
+      "target": "node-0fb9858a-a57b-428f-a679-c34b50bda7ec",
+      "type": "step"
+    }
+  ]
+}
