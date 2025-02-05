@@ -13,8 +13,8 @@ Make sure you have the following installed on your machine:
 Clone the repository:
 
 ```sh
-git clone https://github.com/your-username/my-react-flow-app.git
-cd my-react-flow-app
+git clone https://github.com/jpcaguasango/app-nala-organigram.git
+cd app-nala-organigram
 ```
 
 Install the dependencies:
