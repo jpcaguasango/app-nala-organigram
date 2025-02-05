@@ -222,7 +222,7 @@ const useActions = () => {
       id: newNodeId,
       data: {
         id: newNodeId,
-        label: `New Node`,
+        label: `New Position`,
         employees: [],
         editNode,
         addEmployee,
