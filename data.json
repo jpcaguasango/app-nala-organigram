@@ -1,23 +1,9 @@
 {
   "tiers": [
     {
-      "id": "tier-8c54a839-2445-4651-969b-becb8b3c50c2",
+      "id": "tier-c2b1aa25-0fd7-4f9d-b32c-ce784a3f496a",
       "data": {
-        "label": "Tier 1"
-      },
-      "position": {
-        "x": 0,
-        "y": 0
-      },
-      "type": "tierNode",
-      "draggable": false
-    }
-  ],
-  "nodes": [
-    {
-      "id": "tier-8c54a839-2445-4651-969b-becb8b3c50c2",
-      "data": {
-        "label": "Tier 1"
+        "label": "Gerencia"
       },
       "position": {
         "x": 0,
@@ -27,19 +13,142 @@
       "draggable": false
     },
     {
-      "id": "node-cfab14c7-8e29-44b9-836d-730e03863e0f",
+      "id": "tier-44ed4a7c-dfec-488b-8c2a-10c85c03bd8c",
       "data": {
-        "id": "node-cfab14c7-8e29-44b9-836d-730e03863e0f",
-        "label": "New Position",
+        "label": "Tecnologia"
+      },
+      "position": {
+        "x": 0,
+        "y": 350
+      },
+      "type": "tierNode",
+      "draggable": false
+    },
+    {
+      "id": "tier-1bfaba7a-af26-4301-b8da-bd80db22bfba",
+      "data": {
+        "label": "SSG"
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      },
+      "type": "tierNode",
+      "draggable": false
+    }
+  ],
+  "nodes": [
+    {
+      "id": "tier-c2b1aa25-0fd7-4f9d-b32c-ce784a3f496a",
+      "data": {
+        "label": "Gerencia"
+      },
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "type": "tierNode",
+      "draggable": false
+    },
+    {
+      "id": "node-d3ccaabe-b067-40ac-8a82-f90de088cc4c",
+      "data": {
+        "id": "node-d3ccaabe-b067-40ac-8a82-f90de088cc4c",
+        "label": "Gerencia 1",
         "employees": []
       },
       "position": {
-        "x": 100,
+        "x": 427.73370535714287,
         "y": 70
       },
-      "tier": "tier-8c54a839-2445-4651-969b-becb8b3c50c2",
+      "tier": "tier-c2b1aa25-0fd7-4f9d-b32c-ce784a3f496a",
+      "type": "customNode"
+    },
+    {
+      "id": "node-ec8e0050-902b-4aa6-bd6f-907c7cf9cddd",
+      "data": {
+        "id": "node-ec8e0050-902b-4aa6-bd6f-907c7cf9cddd",
+        "label": "Datos",
+        "employees": []
+      },
+      "position": {
+        "x": 253.54453125000003,
+        "y": 420
+      },
+      "tier": "tier-44ed4a7c-dfec-488b-8c2a-10c85c03bd8c",
+      "type": "customNode"
+    },
+    {
+      "id": "tier-44ed4a7c-dfec-488b-8c2a-10c85c03bd8c",
+      "data": {
+        "label": "Tecnologia"
+      },
+      "position": {
+        "x": 0,
+        "y": 350
+      },
+      "type": "tierNode",
+      "draggable": false
+    },
+    {
+      "id": "node-a5788a77-1313-4222-8f99-973592fe44ac",
+      "data": {
+        "id": "node-a5788a77-1313-4222-8f99-973592fe44ac",
+        "label": "Arquitectura",
+        "employees": []
+      },
+      "position": {
+        "x": 601.9228794642859,
+        "y": 420
+      },
+      "tier": "tier-44ed4a7c-dfec-488b-8c2a-10c85c03bd8c",
+      "type": "customNode"
+    },
+    {
+      "id": "tier-1bfaba7a-af26-4301-b8da-bd80db22bfba",
+      "data": {
+        "label": "SSG"
+      },
+      "position": {
+        "x": 0,
+        "y": 700
+      },
+      "type": "tierNode",
+      "draggable": false
+    },
+    {
+      "id": "node-b7002dd6-7d76-4f7d-ab53-f69c2dd66c1f",
+      "data": {
+        "id": "node-b7002dd6-7d76-4f7d-ab53-f69c2dd66c1f",
+        "label": "Psicologia",
+        "employees": []
+      },
+      "position": {
+        "x": 871.5935267857143,
+        "y": 770
+      },
+      "tier": "tier-1bfaba7a-af26-4301-b8da-bd80db22bfba",
       "type": "customNode"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "id": "enode-d3ccaabe-b067-40ac-8a82-f90de088cc4c-node-ec8e0050-902b-4aa6-bd6f-907c7cf9cddd",
+      "source": "node-d3ccaabe-b067-40ac-8a82-f90de088cc4c",
+      "target": "node-ec8e0050-902b-4aa6-bd6f-907c7cf9cddd",
+      "type": "step"
+    },
+    {
+      "id": "enode-d3ccaabe-b067-40ac-8a82-f90de088cc4c-node-a5788a77-1313-4222-8f99-973592fe44ac",
+      "source": "node-d3ccaabe-b067-40ac-8a82-f90de088cc4c",
+      "target": "node-a5788a77-1313-4222-8f99-973592fe44ac",
+      "type": "step"
+    },
+    {
+      "id": "enode-d3ccaabe-b067-40ac-8a82-f90de088cc4c-node-b7002dd6-7d76-4f7d-ab53-f69c2dd66c1f",
+      "source": "node-d3ccaabe-b067-40ac-8a82-f90de088cc4c",
+      "target": "node-b7002dd6-7d76-4f7d-ab53-f69c2dd66c1f",
+      "type": "step"
+    }
+  ]
 }

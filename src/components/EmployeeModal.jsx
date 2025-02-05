@@ -36,6 +36,7 @@ const EmployeeModal = ({
 
     setName('');
     setPosition('');
+    setEmployeeIndex(null);
   };
 
   return (
