@@ -4,12 +4,11 @@ import SendIcon from '@mui/icons-material/Send';
 import {
   Button,
   Card,
-  CardActions,
   CardContent,
   Chip,
   IconButton,
   TextField,
-  Typography,
+  Typography
 } from '@mui/material';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
@@ -18,7 +17,6 @@ const TiersAndNodes = ({
   tiers,
   nodes,
   addTier,
-  addNode,
   editTier,
   onReset,
 }) => {
@@ -138,16 +136,6 @@ const TiersAndNodes = ({
                   />
                 ))}
             </div>
-
-            <CardActions>
-              <Button
-                variant="contained"
-                size="small"
-                onClick={() => addNode(index)}
-              >
-                Add Node
-              </Button>
-            </CardActions>
           </CardContent>
         </Card>
       ))}
@@ -163,7 +151,6 @@ TiersAndNodes.propTypes = {
   tiers: PropTypes.array.isRequired,
   nodes: PropTypes.array.isRequired,
   addTier: PropTypes.func.isRequired,
-  addNode: PropTypes.func.isRequired,
   editTier: PropTypes.func.isRequired,
   onReset: PropTypes.func.isRequired,
 };

@@ -1,4 +1,6 @@
+import AddCircleIcon from '@mui/icons-material/AddCircle';
 import EditIcon from '@mui/icons-material/Edit';
+import PeopleIcon from '@mui/icons-material/People';
 import {
   Avatar,
   Box,
@@ -14,7 +16,6 @@ import { Handle, Position } from '@xyflow/react';
 import PropTypes from 'prop-types';
 import { memo, useState } from 'react';
 import EmployeeModal from './EmployeeModal';
-import PeopleIcon from '@mui/icons-material/People';
 
 const CustomNode = ({ data }) => {
   const [editingNode, setEditingNode] = useState(null);
@@ -25,7 +26,7 @@ const CustomNode = ({ data }) => {
 
   return (
     <div>
-      <Card sx={{ width: 220 }}>
+      <Card sx={{ width: 220 }} elevation={10}>
         <CardContent>
           <Box>
             <Grid container spacing={2}>
@@ -93,7 +94,17 @@ const CustomNode = ({ data }) => {
               </Grid>
             </Grid>
           </Box>
-          <Handle type="target" position={Position.Top} />
+          <Box display="flex" justifyContent="center" mt={1}>
+            <IconButton
+              style={{ position: 'absolute', bottom: -75 }}
+              color="primary"
+              size="large"
+              onClick={() => data.addNode(data.id)}
+            >
+              <AddCircleIcon style={{ fontSize: 48 }} />
+            </IconButton>
+          </Box>
+          {!data.isParent && <Handle type="target" position={Position.Top} />}
           <Handle type="source" position={Position.Bottom} />
         </CardContent>
       </Card>
@@ -114,11 +125,13 @@ CustomNode.propTypes = {
   data: PropTypes.shape({
     id: PropTypes.string,
     label: PropTypes.string,
+    isParent: PropTypes.bool,
     employees: PropTypes.array,
     editNode: PropTypes.func,
     addEmployee: PropTypes.func,
     editEmployee: PropTypes.func,
     deleteEmployee: PropTypes.func,
+    addNode: PropTypes.func,
   }).isRequired,
 };
 

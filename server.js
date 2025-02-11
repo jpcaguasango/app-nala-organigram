@@ -37,7 +37,7 @@ app.get('/data', (req, res) => {
 // Save or update the entire structure
 app.post('/save', (req, res) => {
   const { tiers, nodes, edges } = req.body;
-  if (!tiers || !nodes || !edges) {
+  if (!nodes || !edges) {
     return res.status(400).json({ error: 'Invalid data format' });
   }
   const newData = { tiers, nodes, edges };
